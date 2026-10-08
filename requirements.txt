@@ -1,0 +1,20 @@
+# Core numerical and data libraries
+numpy>=1.24,<3
+pandas>=1.5,<3
+
+# Model training
+# Install the platform-appropriate PyTorch build from https://pytorch.org/get-started/locally/
+torch>=2.0,<3
+
+# Evaluation notebooks and plots
+matplotlib>=3.7,<4
+seaborn>=0.13,<1
+tqdm>=4.65,<5
+
+# Jupyter notebook support
+jupyter>=1.0,<2
+ipykernel>=6.25,<7
+
+# Optional scientific utilities used by extended analyses
+scipy>=1.10,<2
+scikit-learn>=1.3,<2

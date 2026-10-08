@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ttoa-nn"
+version = "0.1.0"
+description = "TTOA-NN framework for discrete choice models"
+readme = "README.md"
+requires-python = ">=3.9,<3.13"
+
+dependencies = [
+    "numpy>=1.24,<3",
+    "pandas>=1.5,<3",
+    "torch>=2.0,<3",
+    "matplotlib>=3.7,<4",
+    "seaborn>=0.13,<1",
+    "tqdm>=4.65,<5",
+    "scipy>=1.10,<2",
+    "scikit-learn>=1.3,<2",
+]
+
+[project.optional-dependencies]
+notebook = [
+    "jupyter>=1.0,<2",
+    "ipykernel>=6.25,<7",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ttoann*"]
+exclude = ["ttoann.benchmarks*"]
