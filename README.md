@@ -45,13 +45,13 @@ For platform-specific PyTorch installation instructions, see [the official PyTor
 ### Examples
 
 - [`train_example.ipynb`](train_example.ipynb) demonstrates how to load the data, configure a TTOA-NN model, train it with early stopping, and evaluate its validation performance.
-- [`evaluation_example.ipynb`](evaluation_example.ipynb) demonstrates post-analysis of a trained model, including choice metrics, moral-stance metrics, taboo-signal heatmaps, sensitivity-quartile penalty plots, and the animated taboo-penalty demonstration above.
+- [`evaluation_example.ipynb`](evaluation_example.ipynb) demonstrates post-analysis of a trained model, including choice metrics, moral stance metrics, taboo signal heatmaps, and quartile-based taboo penalty heatmaps.
 
 The empirical data and trained checkpoints are not included in this repository. Before running either notebook, set the data and checkpoint paths in its configuration cell to files available on your local device.
 
 ### Simulation data
 
-Simulation data and the corresponding simulation examples will be added in a future update. The repository structure will be extended with instructions for reproducing the simulation experiments when those files are available.
+Simulation data will be added in a future update. The repository structure will be extended with instructions for reproducing the simulation experiments when those files are available.
 
 ## Citation
 
