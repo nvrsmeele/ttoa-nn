@@ -11,7 +11,7 @@ Our paper introduces the **taboo trade-off aversion neural network (TTOA-NN)**, 
 
 ## Abstract
 
-Healthcare policy often involves morally problematic trade-offs, such as lives for money or quality of life for efficiency. We introduce the taboo trade-off aversion neural network (TTOA-NN), a multimodal and multitask framework that learns taboo trade-offs and individual aversion from stated choices and textual justifications. Simulation experiments establish its identifiability, and an application to a Dutch pandemic preparedness experiment shows that taboo trade-off aversion is primarily associated with the moral foundation Authority rather than Care, Fairness, or Sanctity. The modular framework embeds into any random utility maximization model and reveals which trade-offs are taboo, who is most averse to them, and how this aversion relates to moral orientations expressed in people’s choice justifications.
+Healthcare policy routinely involves morally problematic, or taboo, trade-offs, such as lives for money or quality of life for efficiency. Ignoring people’s aversion to these trade-offs misrepresents preferences and biases welfare estimates, and standard random utility maximization (RUM) models accommodate it by imposing theory-driven assumptions about which trade-offs are taboo. We introduce the taboo trade-off aversion neural network (TTOA-NN), a multimodal and multitask framework that identifies taboo trade-offs and individual aversion from data by combining stated choices with textual justifications. A simulation study establishes its identifiability, and an application to a Dutch pandemic preparedness experiment shows that taboo trade-off aversion aligns primarily with the moral foundation Authority rather than Care, Fairness, or Sanctity. The modular framework embeds in any RUM model and links individual aversion to the moral foundations people express in their choice justifications.
 
 ## Taboo penalty in utility space
 
@@ -48,10 +48,6 @@ For platform-specific PyTorch installation instructions, see [the official PyTor
 - [`evaluation_example.ipynb`](evaluation_example.ipynb) demonstrates post-analysis of a trained model, including choice metrics, moral stance metrics, taboo signal heatmaps, and quartile-based taboo penalty heatmaps.
 
 The empirical data and trained checkpoints are not included in this repository. Before running either notebook, set the data and checkpoint paths in its configuration cell to files available on your local device.
-
-### Simulation data
-
-Simulation data will be added in a future update. The repository structure will be extended with instructions for reproducing the simulation experiments when those files are available.
 
 ## Citation
 
